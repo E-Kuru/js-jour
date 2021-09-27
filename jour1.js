@@ -28,3 +28,13 @@ console.log(template);
 var test = "Bonjour";
 var changed = test.replace('o','a');
 console.log(changed);
+
+var bonus1 = "'Hello \nWorld'"
+console.log(bonus1);
+
+var bonus2 = "Tu connais 'ce' gars là ?"
+console.log(bonus2);
+
+var substring = "une phrase lambda"
+var subStr = substring.substring(0,10)
+console.log(subStr);
