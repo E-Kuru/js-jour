@@ -4,7 +4,7 @@ var test = "My name is Evan";
 console.log(test);
 
 var firstName = "Evan";
-console.log(`Nice to meet u ${firstName}`);
+console.log("Nice to meet u " +firstName);
 
 var testLength = "I'm very long I guess";
 console.log(testLength.length);
@@ -29,10 +29,11 @@ var test = "Bonjour";
 var changed = test.replace('o','a');
 console.log(changed);
 
-var bonus1 = "'Hello \nWorld'"
+var bonus1 = `'Hello \nsaddy
+world'`;
 console.log(bonus1);
 
-var bonus2 = "Tu connais 'ce' gars là ?"
+var bonus2 = "Tu connais \"ce\" gars là ?"
 console.log(bonus2);
 
 var substring = "une phrase lambda"
