@@ -21,7 +21,14 @@ console.log(test % bis);
 
 var test2 = 143;
 var bis2 = 219;
+console.log(test2 >= bis2);
+console.log(test2 <= bis2);
+console.log(test2 < bis2);
 console.log(test2 > bis2);
+console.log(test2 == bis2);
+console.log(test2 === bis2);
+console.log(test2 != bis2);
+console.log(test2 !== bis2);
 
 var limit = 50;
 var score = 64;
@@ -88,7 +95,7 @@ switch(month){
     default : console.log("Not a Month");
 }
 
-var rNumber = 14.7;
+var rNumber = 3.4;
 var numberCeil = Math.ceil(rNumber) - rNumber;
 
 console.log(numberCeil);
