@@ -93,11 +93,13 @@ while (count < limite2){
 
 // Bonus III 
 
-var mates = ["Marco","Eloi","Jong","Hélène","Rébecca","Kevin JM","Kévin","Salwa","Hanaa","Ahmed","Alin","Jeremy","Vincent","Bilal","Edouard","Chaïma","Syrine","Séverin","Karimou"]
+var mates = ["Marco","Eloi","Jong","Hélène","Rébecca","Kevin JM","Kévin","Salwa","Hanaa","Ahmed","Alin","Jeremy","Vincent","Bilal","Edouard","Chaïma","Syrine","Séverin","Karimou","Evan"]
+
+console.log(mates.length);
 
 var randomMates = mates[Math.floor(Math.random() * mates.length)];;
 
-console.log(randomMates);
+console.log(`The Best mate is ${randomMates}`);
 
 // Bonus IV 
 
