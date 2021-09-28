@@ -107,6 +107,19 @@ var rArray = [];
 var max = 100;
 var min = 0;
 
-for (; rArray.length < 20  ; rArray.push(Math.floor(Math.random () * (max - min +1) + min ) ) ){
+for (; rArray.length < 20  ; rArray.push(Math.floor(Math.random() * (max - min +1) + min ) ) ){
 }
 console.log(rArray);
+
+let result = rArray[0];
+
+// boucler sur chaque élément afin de stocker la plus grande valeur dans ma variable en la comparant a la précédente
+
+rArray.forEach(function (e){
+
+  if(result < e){ result = e };
+  
+});
+
+  // return le resultat du plus grand
+console.log(result);
