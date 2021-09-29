@@ -41,19 +41,19 @@ console.log(numbers);
 var total = 0;
 var limite = 10;
 
-for (let i = 1; i <= limite ; total = total + i++ ){
+for (let i = 0; i <= limite ; total = total + i++ ){
     console.log(total + i);
 };
 
 // Reverse 
 
 var sentence = "Hello Konexio !";
-var newString = "";
+var reverseSentence = "";
 
 for (var i = sentence.length - 1; i >= 0; i--) { 
-    newString += sentence[i];
+    reverseSentence += sentence[i];
 }
-console.log(newString);
+console.log(reverseSentence);
 
 // FizzBuzz 
 
@@ -84,20 +84,18 @@ for (let i = 0; i <= enter ; i++){
 
 var total2 = 0
 var limite2 = 10
-var count = 1
+var count = 0
 
-while (count < limite2){
+while (count <= limite2){
     total2 = total2 + count++
-    console.log(total2 + count);
+    console.log(total2);
 }
 
 // Bonus III 
 
 var mates = ["Marco","Eloi","Jong","Hélène","Rébecca","Kevin JM","Kévin","Salwa","Hanaa","Ahmed","Alin","Jeremy","Vincent","Bilal","Edouard","Chaïma","Syrine","Séverin","Karimou","Evan"]
 
-console.log(mates.length);
-
-var randomMates = mates[Math.floor(Math.random() * mates.length)];;
+var randomMates = mates[Math.floor(Math.random() * mates.length)];
 
 console.log(`The Best mate is ${randomMates}`);
 
@@ -107,19 +105,36 @@ var rArray = [];
 var max = 100;
 var min = 0;
 
-for (; rArray.length < 20  ; rArray.push(Math.floor(Math.random() * (max - min +1) + min ) ) ){
+for (let i = 0; i < 20; i++){
+    var number = Math.floor(Math.random() * (max - min +1) + min )
+    rArray.push(number)
 }
-console.log(rArray);
+console.table(rArray); // Correction
 
-let result = rArray[0];
+// for ( ; rArray.length < 20  ; rArray.push(Math.floor(Math.random() * (max - min +1) + min ) ) ){
+// }
+// console.log(rArray); Méthode "Fausse"
 
-// boucler sur chaque élément afin de stocker la plus grande valeur dans ma variable en la comparant a la précédente
+var iMax = 0
 
-rArray.forEach(function (e){
+for (let i = 0 ; i < rArray.length; i++){
+    if(rArray[i] > iMax){
+        iMax = rArray[i]
+    }
+}
+console.log(iMax);
 
-  if(result < e){ result = e };
+
+// let result = rArray[0];
+
+// // boucler sur chaque élément afin de stocker la plus grande valeur dans ma variable en la comparant a la précédente
+
+// rArray.forEach(function (e){
+
+//   if(result < e){ result = e };
   
-});
+// });
 
-  // return le resultat du plus grand
-console.log(result);
+//   // return le resultat du plus grand
+
+// console.log(result);
