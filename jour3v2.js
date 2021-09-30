@@ -61,10 +61,10 @@ console.log("");
 // Table de multiplication II
 
 for (let i = 0; i <= 10; i++){
-    console.log("");
     for ( j = 0; j <= 10; j++){
         console.log(`${i} * ${j} = ${i * j}`);
     }
+    console.log("");
 }
 
 console.log("");
@@ -79,6 +79,8 @@ for ( let i = 7; i > 0; i--){
 }
 console.log("7! = " + counter);
 
+console.log("");
+
 
 // Factorielle II
 
@@ -90,10 +92,79 @@ for ( let i = 8; i >= 0; i--){
     for(let j = i ; j >= 1; j--){
         coount = coount * j
     }
-    console.log(coount);
+    console.log(`${i} : ${coount}`);
 }
 
+console.log("");
 
 // Somme des Carrés 
 
+var iCount = 0
 
+for( let i = 5; i <= 10; i++){
+    iCount = iCount + (i**2)
+    console.log(iCount);
+}
+
+console.log("");
+
+// Comptons 
+
+var newCounter = 0
+
+for(let i = 100; i < 1000 ; i++){
+    if ( i % 7 === 0){
+        newCounter++;
+    }
+}
+console.log(newCounter);
+
+console.log("");
+
+// Chanceux 
+
+var iCountAgain = 0
+
+for(let i = 0; i < 20; i++){
+    
+    var randomNumber = Math.floor(Math.random() * (6 - 1 + 1) + 1);
+
+    console.log(randomNumber);
+
+    if(randomNumber >= 5){
+        iCountAgain = iCountAgain + randomNumber
+    }
+}
+console.log("");
+console.log(iCountAgain);
+
+console.log("");
+// Des boîtes
+
+var answer = `
+5
+10
+14`;
+
+// D'autres boîtes
+
+var answer2 = `
+12
+24
+33
+39
+42
+0
+`
+
+// Encore des boîtes
+
+var answer3 = `J'ai pas envi de savoir`
+
+// Mega Bonus 
+
+var amstrong = []
+
+for (let i = 0; i < 1000; i++){
+
+}
