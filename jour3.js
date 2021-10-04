@@ -118,6 +118,7 @@ console.table(rArray); // Correction
 var iMax = 0
 
 for (let i = 0 ; i < rArray.length; i++){
+    
     if(rArray[i] > iMax){
         iMax = rArray[i]
     }
